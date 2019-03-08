@@ -30,6 +30,10 @@
 		D4E497FA223277240007C625 /* ControllersSectionInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497F7223277240007C625 /* ControllersSectionInit.swift */; };
 		D4E497FC223277370007C625 /* EventOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497FB223277370007C625 /* EventOrder.swift */; };
 		D4E497FE223277420007C625 /* EventQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497FD223277420007C625 /* EventQuery.swift */; };
+		D4E498022232803B0007C625 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E498012232803B0007C625 /* Store.swift */; };
+		D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E49809223280D20007C625 /* ShapeControllersSection.swift */; };
+		D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */; };
+		D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		D4E497F7223277240007C625 /* ControllersSectionInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSectionInit.swift; sourceTree = "<group>"; };
 		D4E497FB223277370007C625 /* EventOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventOrder.swift; sourceTree = "<group>"; };
 		D4E497FD223277420007C625 /* EventQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventQuery.swift; sourceTree = "<group>"; };
+		D4E498012232803B0007C625 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		D4E49809223280D20007C625 /* ShapeControllersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersSection.swift; sourceTree = "<group>"; };
+		D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersFeature.swift; sourceTree = "<group>"; };
+		D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersUtilityBase.swift; sourceTree = "<group>"; };
 		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,7 +96,6 @@
 				6198D87DE8C46912117D8EBA /* Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig */,
 				53224A2DC4E0D0DD6296BEAE /* Pods-StratRobTestRepoWithReduxFramework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -194,6 +201,8 @@
 		D4E497DF2232762B0007C625 /* Stage */ = {
 			isa = PBXGroup;
 			children = (
+				D4E49800223280010007C625 /* Shape */,
+				D4E497FF22327FF80007C625 /* Store */,
 			);
 			path = Stage;
 			sourceTree = "<group>";
@@ -274,6 +283,72 @@
 				D4E497F2223277120007C625 /* ControllersFeatureUpdate.swift */,
 			);
 			path = Feature;
+			sourceTree = "<group>";
+		};
+		D4E497FF22327FF80007C625 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D4E498012232803B0007C625 /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		D4E49800223280010007C625 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				D4E498042232807D0007C625 /* Application */,
+				D4E49803223280740007C625 /* Controllers */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		D4E49803223280740007C625 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4E49807223280A90007C625 /* Feature */,
+				D4E49806223280A50007C625 /* Section */,
+				D4E498052232809E0007C625 /* Utility */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4E498042232807D0007C625 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D4E498052232809E0007C625 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D4E49808223280B10007C625 /* Base */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D4E49806223280A50007C625 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				D4E49809223280D20007C625 /* ShapeControllersSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		D4E49807223280A90007C625 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		D4E49808223280B10007C625 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,15 +466,19 @@
 				D4E497FE223277420007C625 /* EventQuery.swift in Sources */,
 				D4E497F0223276FC0007C625 /* EventInput.swift in Sources */,
 				D4E497D7223273600007C625 /* Double+Extension.swift in Sources */,
+				D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */,
 				D4E497DA2232739E0007C625 /* Delayer.swift in Sources */,
 				D4E497D1223273600007C625 /* Date+Extension.swift in Sources */,
+				D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */,
 				D4E497D6223273600007C625 /* Int+Extension.swift in Sources */,
 				D4E497F9223277240007C625 /* ControllersSectionPush.swift in Sources */,
 				D4E497E5223276670007C625 /* RouteAction.swift in Sources */,
 				D4E497F3223277120007C625 /* ControllersFeatureDelete.swift in Sources */,
 				D4E497FA223277240007C625 /* ControllersSectionInit.swift in Sources */,
+				D4E498022232803B0007C625 /* Store.swift in Sources */,
 				D4E497D5223273600007C625 /* UIView+Extension.swift in Sources */,
 				D4E497D2223273600007C625 /* NSNumber+Extension.swift in Sources */,
+				D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */,
 				D4E497EE223276EC0007C625 /* Event.swift in Sources */,
 				D4E497F4223277120007C625 /* ControllersFeatureUpdate.swift in Sources */,
 			);
