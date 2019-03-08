@@ -19,7 +19,7 @@ open class ShapeApplicationCompass: UITabBarController, UINavigationControllerDe
     
     // MARK: - Static Properties
     
-    public static let shared = Compass()
+    open static let shared = Compass()
     
     // MARK: - Init Methods
     
