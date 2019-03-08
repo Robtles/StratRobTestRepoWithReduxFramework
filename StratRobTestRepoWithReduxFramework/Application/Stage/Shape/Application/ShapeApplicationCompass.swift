@@ -17,10 +17,6 @@ public typealias Compass = ShapeApplicationCompass
 
 open class ShapeApplicationCompass: UITabBarController, UINavigationControllerDelegate, UITabBarControllerDelegate, CompassProtocol {//, StoreSubscriber {
     
-    // MARK: - Static Properties
-    
-    open static let shared = Compass()
-    
     // MARK: - Init Methods
     
     deinit {
