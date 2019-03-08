@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CC120A3AF03933E6D0CAF00 /* Pods_StratRobTestRepoWithReduxFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */; };
 		D4E497BE2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E497BC2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E497D1223273600007C625 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497C92232735F0007C625 /* Date+Extension.swift */; };
 		D4E497D2223273600007C625 /* NSNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497CA223273600007C625 /* NSNumber+Extension.swift */; };
@@ -18,9 +19,22 @@
 		D4E497D8223273600007C625 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497D0223273600007C625 /* String+Extension.swift */; };
 		D4E497DA2232739E0007C625 /* Delayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497D92232739E0007C625 /* Delayer.swift */; };
 		D4E497DC223273B00007C625 /* DeviceUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497DB223273B00007C625 /* DeviceUtils.swift */; };
+		D4E497E32232765A0007C625 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497E22232765A0007C625 /* Route.swift */; };
+		D4E497E5223276670007C625 /* RouteAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497E4223276670007C625 /* RouteAction.swift */; };
+		D4E497EE223276EC0007C625 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497ED223276EC0007C625 /* Event.swift */; };
+		D4E497F0223276FC0007C625 /* EventInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497EF223276FC0007C625 /* EventInput.swift */; };
+		D4E497F3223277120007C625 /* ControllersFeatureDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497F1223277120007C625 /* ControllersFeatureDelete.swift */; };
+		D4E497F4223277120007C625 /* ControllersFeatureUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497F2223277120007C625 /* ControllersFeatureUpdate.swift */; };
+		D4E497F8223277240007C625 /* ControllersSectionPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497F5223277240007C625 /* ControllersSectionPop.swift */; };
+		D4E497F9223277240007C625 /* ControllersSectionPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497F6223277240007C625 /* ControllersSectionPush.swift */; };
+		D4E497FA223277240007C625 /* ControllersSectionInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497F7223277240007C625 /* ControllersSectionInit.swift */; };
+		D4E497FC223277370007C625 /* EventOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497FB223277370007C625 /* EventOrder.swift */; };
+		D4E497FE223277420007C625 /* EventQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497FD223277420007C625 /* EventQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53224A2DC4E0D0DD6296BEAE /* Pods-StratRobTestRepoWithReduxFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StratRobTestRepoWithReduxFramework.release.xcconfig"; path = "Target Support Files/Pods-StratRobTestRepoWithReduxFramework/Pods-StratRobTestRepoWithReduxFramework.release.xcconfig"; sourceTree = "<group>"; };
+		6198D87DE8C46912117D8EBA /* Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig"; path = "Target Support Files/Pods-StratRobTestRepoWithReduxFramework/Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		D4E497B92232714F0007C625 /* StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E497BC2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StratRobTestRepoWithReduxFramework.h; sourceTree = "<group>"; };
 		D4E497BD2232714F0007C625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +48,18 @@
 		D4E497D0223273600007C625 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		D4E497D92232739E0007C625 /* Delayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delayer.swift; sourceTree = "<group>"; };
 		D4E497DB223273B00007C625 /* DeviceUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceUtils.swift; sourceTree = "<group>"; };
+		D4E497E22232765A0007C625 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		D4E497E4223276670007C625 /* RouteAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteAction.swift; sourceTree = "<group>"; };
+		D4E497ED223276EC0007C625 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D4E497EF223276FC0007C625 /* EventInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInput.swift; sourceTree = "<group>"; };
+		D4E497F1223277120007C625 /* ControllersFeatureDelete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersFeatureDelete.swift; sourceTree = "<group>"; };
+		D4E497F2223277120007C625 /* ControllersFeatureUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersFeatureUpdate.swift; sourceTree = "<group>"; };
+		D4E497F5223277240007C625 /* ControllersSectionPop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSectionPop.swift; sourceTree = "<group>"; };
+		D4E497F6223277240007C625 /* ControllersSectionPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSectionPush.swift; sourceTree = "<group>"; };
+		D4E497F7223277240007C625 /* ControllersSectionInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllersSectionInit.swift; sourceTree = "<group>"; };
+		D4E497FB223277370007C625 /* EventOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventOrder.swift; sourceTree = "<group>"; };
+		D4E497FD223277420007C625 /* EventQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventQuery.swift; sourceTree = "<group>"; };
+		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +67,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC120A3AF03933E6D0CAF00 /* Pods_StratRobTestRepoWithReduxFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D19DA25E548E6DFB519F261 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70EAFC67D58F923F1AE63768 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6198D87DE8C46912117D8EBA /* Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig */,
+				53224A2DC4E0D0DD6296BEAE /* Pods-StratRobTestRepoWithReduxFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4E497AF2232714F0007C625 = {
 			isa = PBXGroup;
 			children = (
 				D4E497BB2232714F0007C625 /* StratRobTestRepoWithReduxFramework */,
 				D4E497BA2232714F0007C625 /* Products */,
+				70EAFC67D58F923F1AE63768 /* Pods */,
+				3D19DA25E548E6DFB519F261 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +113,7 @@
 		D4E497BB2232714F0007C625 /* StratRobTestRepoWithReduxFramework */ = {
 			isa = PBXGroup;
 			children = (
+				D4E497DD2232761B0007C625 /* Application */,
 				D4E497C4223273270007C625 /* SDK */,
 				D4E497BC2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h */,
 				D4E497BD2232714F0007C625 /* Info.plist */,
@@ -122,6 +170,112 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		D4E497DD2232761B0007C625 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497DE223276260007C625 /* Event */,
+				D4E497E0223276340007C625 /* Route */,
+				D4E497DF2232762B0007C625 /* Stage */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D4E497DE223276260007C625 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497ED223276EC0007C625 /* Event.swift */,
+				D4E497E8223276970007C625 /* Input */,
+				D4E497E7223276930007C625 /* Order */,
+				D4E497E62232768F0007C625 /* Query */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		D4E497DF2232762B0007C625 /* Stage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stage;
+			sourceTree = "<group>";
+		};
+		D4E497E0223276340007C625 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497E22232765A0007C625 /* Route.swift */,
+				D4E497E1223276490007C625 /* RouteAction */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		D4E497E1223276490007C625 /* RouteAction */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497E4223276670007C625 /* RouteAction.swift */,
+			);
+			path = RouteAction;
+			sourceTree = "<group>";
+		};
+		D4E497E62232768F0007C625 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497FD223277420007C625 /* EventQuery.swift */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		D4E497E7223276930007C625 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497FB223277370007C625 /* EventOrder.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		D4E497E8223276970007C625 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497EF223276FC0007C625 /* EventInput.swift */,
+				D4E497E92232769F0007C625 /* Controllers */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		D4E497E92232769F0007C625 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497EC223276AD0007C625 /* Feature */,
+				D4E497EB223276AA0007C625 /* Section */,
+				D4E497EA223276A50007C625 /* Utility */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4E497EA223276A50007C625 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D4E497EB223276AA0007C625 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497F7223277240007C625 /* ControllersSectionInit.swift */,
+				D4E497F5223277240007C625 /* ControllersSectionPop.swift */,
+				D4E497F6223277240007C625 /* ControllersSectionPush.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		D4E497EC223276AD0007C625 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D4E497F1223277120007C625 /* ControllersFeatureDelete.swift */,
+				D4E497F2223277120007C625 /* ControllersFeatureUpdate.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -140,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4E497C12232714F0007C625 /* Build configuration list for PBXNativeTarget "StratRobTestRepoWithReduxFramework" */;
 			buildPhases = (
+				AAAD3A79893D235A02661BC4 /* [CP] Check Pods Manifest.lock */,
 				D4E497B42232714F0007C625 /* Headers */,
 				D4E497B52232714F0007C625 /* Sources */,
 				D4E497B62232714F0007C625 /* Frameworks */,
@@ -196,6 +351,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AAAD3A79893D235A02661BC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StratRobTestRepoWithReduxFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D4E497B52232714F0007C625 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,14 +383,25 @@
 			files = (
 				D4E497D8223273600007C625 /* String+Extension.swift in Sources */,
 				D4E497DC223273B00007C625 /* DeviceUtils.swift in Sources */,
+				D4E497E32232765A0007C625 /* Route.swift in Sources */,
+				D4E497F8223277240007C625 /* ControllersSectionPop.swift in Sources */,
 				D4E497D3223273600007C625 /* UIRefreshControl+Extension.swift in Sources */,
+				D4E497FC223277370007C625 /* EventOrder.swift in Sources */,
 				D4E497D4223273600007C625 /* CLPlacemark+Extension.swift in Sources */,
+				D4E497FE223277420007C625 /* EventQuery.swift in Sources */,
+				D4E497F0223276FC0007C625 /* EventInput.swift in Sources */,
 				D4E497D7223273600007C625 /* Double+Extension.swift in Sources */,
 				D4E497DA2232739E0007C625 /* Delayer.swift in Sources */,
 				D4E497D1223273600007C625 /* Date+Extension.swift in Sources */,
 				D4E497D6223273600007C625 /* Int+Extension.swift in Sources */,
+				D4E497F9223277240007C625 /* ControllersSectionPush.swift in Sources */,
+				D4E497E5223276670007C625 /* RouteAction.swift in Sources */,
+				D4E497F3223277120007C625 /* ControllersFeatureDelete.swift in Sources */,
+				D4E497FA223277240007C625 /* ControllersSectionInit.swift in Sources */,
 				D4E497D5223273600007C625 /* UIView+Extension.swift in Sources */,
 				D4E497D2223273600007C625 /* NSNumber+Extension.swift in Sources */,
+				D4E497EE223276EC0007C625 /* Event.swift in Sources */,
+				D4E497F4223277120007C625 /* ControllersFeatureUpdate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +532,7 @@
 		};
 		D4E497C22232714F0007C625 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6198D87DE8C46912117D8EBA /* Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -368,6 +560,7 @@
 		};
 		D4E497C32232714F0007C625 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53224A2DC4E0D0DD6296BEAE /* Pods-StratRobTestRepoWithReduxFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";

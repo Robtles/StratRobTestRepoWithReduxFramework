@@ -1,0 +1,11 @@
+Pods/
+.DS_Store
+*.backup
+*.hmap
+*.idea
+*.ipa
+*.moved-aside
+*.xcbkptlist
+*.xccheckout
+*.xcschememanagement.plist
+*.xcuserstate
