@@ -35,6 +35,7 @@
 		D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */; };
 		D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */; };
 		D4E4981822329E310007C625 /* AppDelegateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4981722329E310007C625 /* AppDelegateBase.swift */; };
+		D4E4981A2232ACCA0007C625 /* ShapeApplicationCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E498192232ACCA0007C625 /* ShapeApplicationCompass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersFeature.swift; sourceTree = "<group>"; };
 		D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersUtilityBase.swift; sourceTree = "<group>"; };
 		D4E4981722329E310007C625 /* AppDelegateBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateBase.swift; sourceTree = "<group>"; };
+		D4E498192232ACCA0007C625 /* ShapeApplicationCompass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeApplicationCompass.swift; sourceTree = "<group>"; };
 		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -318,6 +320,7 @@
 		D4E498042232807D0007C625 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				D4E498192232ACCA0007C625 /* ShapeApplicationCompass.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				D4E497DC223273B00007C625 /* DeviceUtils.swift in Sources */,
 				D4E497E32232765A0007C625 /* Route.swift in Sources */,
 				D4E497F8223277240007C625 /* ControllersSectionPop.swift in Sources */,
+				D4E4981A2232ACCA0007C625 /* ShapeApplicationCompass.swift in Sources */,
 				D4E497D3223273600007C625 /* UIRefreshControl+Extension.swift in Sources */,
 				D4E497FC223277370007C625 /* EventOrder.swift in Sources */,
 				D4E497D4223273600007C625 /* CLPlacemark+Extension.swift in Sources */,
