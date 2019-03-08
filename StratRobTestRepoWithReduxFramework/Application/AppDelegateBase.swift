@@ -10,28 +10,25 @@ import UIKit
 
 
 
-open class AppDelegateBase: UIResponder, UIApplicationDelegate, AppDelegateBaseProtocol {
+open class AppDelegateBase: UIResponder, UIApplicationDelegate {
     
-    var window: UIWindow?
+    open var window: UIWindow?
     
     open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        /*Compass.shared.updateContent()
+         self.defaultLaunch()*/
         self.launchOperations()
-        //self.window = UIWindow(frame: UIScreen.main.bounds)
-        //Compass.shared.updateContent()
-        //self.defaultLaunch()
         return true
     }
     
-    open func launchOperations() {
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.defaultLaunch()
-    }
+    open func launchOperations() {}
     
     // MARK: View Methods
     
     open func defaultLaunch() {
-        self.replace(with: UIViewController())
         //self.replace(with: Compass.shared)
+        self.replace(with: UIViewController())
     }
     
     open func replace(with viewController: UIViewController) {
@@ -46,12 +43,5 @@ open class AppDelegateBase: UIResponder, UIApplicationDelegate, AppDelegateBaseP
             }
         }
     }
-
-}
-
-
-protocol AppDelegateBaseProtocol {
-    
-    func launchOperations()
     
 }
