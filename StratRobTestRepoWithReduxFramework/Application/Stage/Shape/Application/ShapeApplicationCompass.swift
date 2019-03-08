@@ -23,7 +23,7 @@ open class ShapeApplicationCompass: UITabBarController, UINavigationControllerDe
         //store.unsubscribe(self)
     }
     
-    private init() {
+    public init() {
         super.init(nibName: nil, bundle: nil)
         //store.subscribe(self)
     }
