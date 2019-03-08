@@ -22,7 +22,7 @@ open class AppDelegateBase: UIResponder, UIApplicationDelegate, AppDelegateBaseP
         return true
     }
     
-    func launchOperations() {
+    open func launchOperations() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.defaultLaunch()
     }
