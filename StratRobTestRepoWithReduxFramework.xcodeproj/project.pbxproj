@@ -34,6 +34,7 @@
 		D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E49809223280D20007C625 /* ShapeControllersSection.swift */; };
 		D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */; };
 		D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */; };
+		D4E4981822329E310007C625 /* AppDelegateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4981722329E310007C625 /* AppDelegateBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		D4E49809223280D20007C625 /* ShapeControllersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersSection.swift; sourceTree = "<group>"; };
 		D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersFeature.swift; sourceTree = "<group>"; };
 		D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersUtilityBase.swift; sourceTree = "<group>"; };
+		D4E4981722329E310007C625 /* AppDelegateBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateBase.swift; sourceTree = "<group>"; };
 		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 		D4E497DD2232761B0007C625 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				D4E4981722329E310007C625 /* AppDelegateBase.swift */,
 				D4E497DE223276260007C625 /* Event */,
 				D4E497E0223276340007C625 /* Route */,
 				D4E497DF2232762B0007C625 /* Stage */,
@@ -477,6 +480,7 @@
 				D4E497FA223277240007C625 /* ControllersSectionInit.swift in Sources */,
 				D4E498022232803B0007C625 /* Store.swift in Sources */,
 				D4E497D5223273600007C625 /* UIView+Extension.swift in Sources */,
+				D4E4981822329E310007C625 /* AppDelegateBase.swift in Sources */,
 				D4E497D2223273600007C625 /* NSNumber+Extension.swift in Sources */,
 				D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */,
 				D4E497EE223276EC0007C625 /* Event.swift in Sources */,
