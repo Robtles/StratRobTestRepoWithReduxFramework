@@ -16,8 +16,6 @@ open class AppDelegateBase: UIResponder, UIApplicationDelegate {
     
     open func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        /*Compass.shared.updateContent()
-         self.defaultLaunch()*/
         self.launchOperations()
         return true
     }
@@ -27,7 +25,6 @@ open class AppDelegateBase: UIResponder, UIApplicationDelegate {
     // MARK: View Methods
     
     open func defaultLaunch() {
-        //self.replace(with: Compass.shared)
         self.replace(with: UIViewController())
     }
     
