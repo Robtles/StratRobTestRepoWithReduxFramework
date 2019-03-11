@@ -64,6 +64,8 @@ open class Application: NSObject {
                 }
             }
             
+            public static var cornerRadius: CGFloat?
+            
             public static var font: UIFont?
             
             public static var textColor: UIColor? {
