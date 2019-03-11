@@ -19,7 +19,7 @@ extension UIButton {
     // way to go consists in using a computed property instead and play around with the pointer address.
     private static var _shouldUseProxyAppearanceCornerRadius = [String: Bool]()
     
-    @IBInspectable var shouldUseProxyAppearanceCornerRadius: Bool {
+    @IBInspectable open var shouldUseProxyAppearanceCornerRadius: Bool {
         get {
             let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))
             return UIButton._shouldUseProxyAppearanceCornerRadius[tmpAddress] ?? true
@@ -32,7 +32,7 @@ extension UIButton {
     
     private static var _shouldUseProxyAppearanceFont = [String: Bool]()
     
-    @IBInspectable var shouldUseProxyAppearanceFont: Bool {
+    @IBInspectable open var shouldUseProxyAppearanceFont: Bool {
         get {
             let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))
             return UIButton._shouldUseProxyAppearanceFont[tmpAddress] ?? true
