@@ -34,7 +34,8 @@
 		D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E49809223280D20007C625 /* ShapeControllersSection.swift */; };
 		D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */; };
 		D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */; };
-		D4E4981822329E310007C625 /* AppDelegateBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4981722329E310007C625 /* AppDelegateBase.swift */; };
+		D4EF249A22364E7F0039005C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF249922364E7F0039005C /* Application.swift */; };
+		D4EF24BA2236656C0039005C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24B92236656C0039005C /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +69,8 @@
 		D4E49809223280D20007C625 /* ShapeControllersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersSection.swift; sourceTree = "<group>"; };
 		D4E4980B223280F20007C625 /* ShapeControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersFeature.swift; sourceTree = "<group>"; };
 		D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersUtilityBase.swift; sourceTree = "<group>"; };
-		D4E4981722329E310007C625 /* AppDelegateBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateBase.swift; sourceTree = "<group>"; };
+		D4EF249922364E7F0039005C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		D4EF24B92236656C0039005C /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 				D4E497D0223273600007C625 /* String+Extension.swift */,
 				D4E497CB223273600007C625 /* UIRefreshControl+Extension.swift */,
 				D4E497CD223273600007C625 /* UIView+Extension.swift */,
+				D4EF24B92236656C0039005C /* UIButton+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,7 +185,7 @@
 		D4E497DD2232761B0007C625 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				D4E4981722329E310007C625 /* AppDelegateBase.swift */,
+				D4EF249922364E7F0039005C /* Application.swift */,
 				D4E497DE223276260007C625 /* Event */,
 				D4E497E0223276340007C625 /* Route */,
 				D4E497DF2232762B0007C625 /* Stage */,
@@ -468,10 +471,12 @@
 				D4E497D4223273600007C625 /* CLPlacemark+Extension.swift in Sources */,
 				D4E497FE223277420007C625 /* EventQuery.swift in Sources */,
 				D4E497F0223276FC0007C625 /* EventInput.swift in Sources */,
+				D4EF249A22364E7F0039005C /* Application.swift in Sources */,
 				D4E497D7223273600007C625 /* Double+Extension.swift in Sources */,
 				D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */,
 				D4E497DA2232739E0007C625 /* Delayer.swift in Sources */,
 				D4E497D1223273600007C625 /* Date+Extension.swift in Sources */,
+				D4EF24BA2236656C0039005C /* UIButton+Extension.swift in Sources */,
 				D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */,
 				D4E497D6223273600007C625 /* Int+Extension.swift in Sources */,
 				D4E497F9223277240007C625 /* ControllersSectionPush.swift in Sources */,
@@ -480,7 +485,6 @@
 				D4E497FA223277240007C625 /* ControllersSectionInit.swift in Sources */,
 				D4E498022232803B0007C625 /* Store.swift in Sources */,
 				D4E497D5223273600007C625 /* UIView+Extension.swift in Sources */,
-				D4E4981822329E310007C625 /* AppDelegateBase.swift in Sources */,
 				D4E497D2223273600007C625 /* NSNumber+Extension.swift in Sources */,
 				D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */,
 				D4E497EE223276EC0007C625 /* Event.swift in Sources */,
