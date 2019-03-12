@@ -12,12 +12,20 @@ import ReSwift
 public let store: ReSwift.Store<Store> = ReSwift.Store(reducer: Store.reduce, state: nil)
 
 
-open class Store: StateType {
+public struct Store: StateType {
+    
+    // MARK: - State Properties
+    
+    public var application: StoreApplication
+    
+    public var controllers: StoreControllers
     
     // MARK: - Store Methods
     
     public static func reduce(action: Action, state: Store?) -> Store {
-        return Store()
+        let compass = StoreApplicationCompass.reduce(action: action, state: state?.application.compass)
+        let application = StoreApplication(compass: compass)
+        return Store(application: application, controllers: StoreControllers.reduce(action: action, state: state?.controllers))
     }
     
 }
@@ -35,6 +43,16 @@ public protocol StoreProtocol {
     
     static func reduce(action: Action, state: Self?) -> Self
     
+}
+
+open class StoreControllersFeatureContent: StoreProtocol {
+    
+    public var data: [String : Any?]
+    
+    public required init() {
+        self.data = [:]
+    }
+
 }
 
 /**

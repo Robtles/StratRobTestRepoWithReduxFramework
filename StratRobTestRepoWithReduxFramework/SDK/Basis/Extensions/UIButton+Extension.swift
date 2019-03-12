@@ -22,7 +22,7 @@ extension UIButton {
     @IBInspectable open var shouldUseProxyAppearanceCornerRadius: Bool {
         get {
             let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))
-            return UIButton._shouldUseProxyAppearanceCornerRadius[tmpAddress] ?? true
+            return UIButton._shouldUseProxyAppearanceCornerRadius[tmpAddress] ?? false
         }
         set(newValue) {
             let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))
@@ -35,7 +35,7 @@ extension UIButton {
     @IBInspectable open var shouldUseProxyAppearanceFont: Bool {
         get {
             let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))
-            return UIButton._shouldUseProxyAppearanceFont[tmpAddress] ?? true
+            return UIButton._shouldUseProxyAppearanceFont[tmpAddress] ?? false
         }
         set(newValue) {
             let tmpAddress = String(format: "%p", unsafeBitCast(self, to: Int.self))

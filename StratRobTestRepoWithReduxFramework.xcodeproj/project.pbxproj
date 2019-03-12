@@ -36,6 +36,12 @@
 		D4E4980E2232810D0007C625 /* ShapeControllersUtilityBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */; };
 		D4EF249A22364E7F0039005C /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF249922364E7F0039005C /* Application.swift */; };
 		D4EF24BA2236656C0039005C /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24B92236656C0039005C /* UIButton+Extension.swift */; };
+		D4EF24C02237B75B0039005C /* StoreControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24BF2237B75B0039005C /* StoreControllers.swift */; };
+		D4EF24C22237B7640039005C /* StoreApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24C12237B7640039005C /* StoreApplication.swift */; };
+		D4EF24C52237B8700039005C /* StoreApplicationCompass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24C42237B8700039005C /* StoreApplicationCompass.swift */; };
+		D4EF24CA2237B9FD0039005C /* StoreControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24C92237B9FD0039005C /* StoreControllersFeature.swift */; };
+		D4EF24CC2237BA040039005C /* StoreControllersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24CB2237BA040039005C /* StoreControllersSection.swift */; };
+		D4EF24CE2237BA0D0039005C /* StoreControllersUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24CD2237BA0D0039005C /* StoreControllersUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +77,12 @@
 		D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeControllersUtilityBase.swift; sourceTree = "<group>"; };
 		D4EF249922364E7F0039005C /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		D4EF24B92236656C0039005C /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		D4EF24BF2237B75B0039005C /* StoreControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllers.swift; sourceTree = "<group>"; };
+		D4EF24C12237B7640039005C /* StoreApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApplication.swift; sourceTree = "<group>"; };
+		D4EF24C42237B8700039005C /* StoreApplicationCompass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreApplicationCompass.swift; sourceTree = "<group>"; };
+		D4EF24C92237B9FD0039005C /* StoreControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersFeature.swift; sourceTree = "<group>"; };
+		D4EF24CB2237BA040039005C /* StoreControllersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersSection.swift; sourceTree = "<group>"; };
+		D4EF24CD2237BA0D0039005C /* StoreControllersUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersUtility.swift; sourceTree = "<group>"; };
 		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -295,6 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				D4E498012232803B0007C625 /* Store.swift */,
+				D4EF24BE2237B73F0039005C /* Application */,
+				D4EF24BD2237B7370039005C /* Controllers */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -355,6 +369,58 @@
 				D4E4980D2232810D0007C625 /* ShapeControllersUtilityBase.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D4EF24BD2237B7370039005C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF24BF2237B75B0039005C /* StoreControllers.swift */,
+				D4EF24C82237B9ED0039005C /* Feature */,
+				D4EF24C72237B9E90039005C /* Section */,
+				D4EF24C62237B9E50039005C /* Utility */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D4EF24BE2237B73F0039005C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF24C12237B7640039005C /* StoreApplication.swift */,
+				D4EF24C32237B8640039005C /* Compass */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D4EF24C32237B8640039005C /* Compass */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF24C42237B8700039005C /* StoreApplicationCompass.swift */,
+			);
+			path = Compass;
+			sourceTree = "<group>";
+		};
+		D4EF24C62237B9E50039005C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF24CD2237BA0D0039005C /* StoreControllersUtility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D4EF24C72237B9E90039005C /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF24CB2237BA040039005C /* StoreControllersSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		D4EF24C82237B9ED0039005C /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D4EF24C92237B9FD0039005C /* StoreControllersFeature.swift */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,10 +529,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E497D8223273600007C625 /* String+Extension.swift in Sources */,
+				D4EF24C52237B8700039005C /* StoreApplicationCompass.swift in Sources */,
 				D4E497DC223273B00007C625 /* DeviceUtils.swift in Sources */,
 				D4E497E32232765A0007C625 /* Route.swift in Sources */,
 				D4E497F8223277240007C625 /* ControllersSectionPop.swift in Sources */,
 				D4E497D3223273600007C625 /* UIRefreshControl+Extension.swift in Sources */,
+				D4EF24C02237B75B0039005C /* StoreControllers.swift in Sources */,
 				D4E497FC223277370007C625 /* EventOrder.swift in Sources */,
 				D4E497D4223273600007C625 /* CLPlacemark+Extension.swift in Sources */,
 				D4E497FE223277420007C625 /* EventQuery.swift in Sources */,
@@ -477,7 +545,10 @@
 				D4E497DA2232739E0007C625 /* Delayer.swift in Sources */,
 				D4E497D1223273600007C625 /* Date+Extension.swift in Sources */,
 				D4EF24BA2236656C0039005C /* UIButton+Extension.swift in Sources */,
+				D4EF24CC2237BA040039005C /* StoreControllersSection.swift in Sources */,
 				D4E4980C223280F20007C625 /* ShapeControllersFeature.swift in Sources */,
+				D4EF24CA2237B9FD0039005C /* StoreControllersFeature.swift in Sources */,
+				D4EF24CE2237BA0D0039005C /* StoreControllersUtility.swift in Sources */,
 				D4E497D6223273600007C625 /* Int+Extension.swift in Sources */,
 				D4E497F9223277240007C625 /* ControllersSectionPush.swift in Sources */,
 				D4E497E5223276670007C625 /* RouteAction.swift in Sources */,
@@ -489,6 +560,7 @@
 				D4E4980A223280D20007C625 /* ShapeControllersSection.swift in Sources */,
 				D4E497EE223276EC0007C625 /* Event.swift in Sources */,
 				D4E497F4223277120007C625 /* ControllersFeatureUpdate.swift in Sources */,
+				D4EF24C22237B7640039005C /* StoreApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
