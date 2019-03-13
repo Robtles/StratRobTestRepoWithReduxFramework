@@ -42,6 +42,7 @@
 		D4EF24CA2237B9FD0039005C /* StoreControllersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24C92237B9FD0039005C /* StoreControllersFeature.swift */; };
 		D4EF24CC2237BA040039005C /* StoreControllersSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24CB2237BA040039005C /* StoreControllersSection.swift */; };
 		D4EF24CE2237BA0D0039005C /* StoreControllersUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF24CD2237BA0D0039005C /* StoreControllersUtility.swift */; };
+		D4EF250E2239789F0039005C /* ControllersUtilityInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EF250D2239789F0039005C /* ControllersUtilityInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		D4EF24C92237B9FD0039005C /* StoreControllersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersFeature.swift; sourceTree = "<group>"; };
 		D4EF24CB2237BA040039005C /* StoreControllersSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersSection.swift; sourceTree = "<group>"; };
 		D4EF24CD2237BA0D0039005C /* StoreControllersUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreControllersUtility.swift; sourceTree = "<group>"; };
+		D4EF250D2239789F0039005C /* ControllersUtilityInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllersUtilityInput.swift; sourceTree = "<group>"; };
 		FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -280,6 +282,7 @@
 		D4E497EA223276A50007C625 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D4EF250D2239789F0039005C /* ControllersUtilityInput.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E497D8223273600007C625 /* String+Extension.swift in Sources */,
+				D4EF250E2239789F0039005C /* ControllersUtilityInput.swift in Sources */,
 				D4EF24C52237B8700039005C /* StoreApplicationCompass.swift in Sources */,
 				D4E497DC223273B00007C625 /* DeviceUtils.swift in Sources */,
 				D4E497E32232765A0007C625 /* Route.swift in Sources */,

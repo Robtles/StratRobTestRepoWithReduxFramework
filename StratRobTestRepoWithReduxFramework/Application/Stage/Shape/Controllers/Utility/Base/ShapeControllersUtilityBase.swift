@@ -8,7 +8,13 @@
 
 open class ShapeControllersUtilityBase: ShapeControllersFeature {
     
-    // MARK: Instance Properties
+    // MARK: - Instance Properties
+    
+    open var buttonAction: (() -> ())? = {}
+    
+    open var correspondingUtilityStore: StoreControllersUtilityContent {
+        return StoreControllersUtilityContent()
+    }
     
     open var isDismissingByBottom: Bool = false
     
@@ -16,7 +22,54 @@ open class ShapeControllersUtilityBase: ShapeControllersFeature {
     
     @IBOutlet open weak var alertView: UIView?
     
+    @IBOutlet open weak var button: UIButton?
+    
     @IBOutlet open weak var overlayView: UIView?
+    
+    @IBOutlet open var textLabel: UILabel?
+    
+    // MARK: - Action Methods
+    
+    open func dismiss() {
+        self.dismiss(animated: true) {
+            self.buttonAction?()
+        }
+    }
+    
+    @IBAction open func tappedButton(_ sender: Any) {
+        store.dispatch(ControllersUtilityInput.hide(ofType: featureIdentifier, showingCompletion: true))
+    }
+    
+    @IBAction func tapToDismiss(_ sender: Any) {
+        store.dispatch(ControllersUtilityInput.hide(ofType: featureIdentifier, showingCompletion: false))
+    }
+    
+    // MARK: Init Methods
+    
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: String(describing: type(of: self)), bundle: nil)
+        self.transitioningDelegate = self
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) not intended to be used")
+    }
+    
+    private func commonInit() {
+        store.state.controllers.utility.data[featureIdentifier] = correspondingUtilityStore
+    }
+    
+    // MARK: View Methods
+    
+    open func presentIn(_ viewController: UIViewController, _ completion: @escaping (() -> ())) {
+        if Thread.isMainThread {
+            viewController.present(self, animated: true, completion: nil)
+        } else {
+            DispatchQueue.main.async {
+                viewController.present(self, animated: true, completion: nil)
+            }
+        }
+    }
     
 }
 

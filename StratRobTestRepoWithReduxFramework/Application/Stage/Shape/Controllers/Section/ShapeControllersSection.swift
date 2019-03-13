@@ -14,6 +14,10 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     
     // MARK: - Instance Properties
     
+    open var correspondingStore: StoreControllersSectionContent {
+        return StoreControllersSectionContent()
+    }
+    
     open var identifier: String {
         return ""
     }
@@ -43,6 +47,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     }
     
     private func commonInit() {
+        store.state.controllers.section.data[identifier] = correspondingStore
         store.dispatch(ControllersSectionInit())
     }
     
