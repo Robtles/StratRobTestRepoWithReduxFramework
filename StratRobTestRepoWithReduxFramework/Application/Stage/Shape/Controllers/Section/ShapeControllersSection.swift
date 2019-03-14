@@ -18,7 +18,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         return StoreControllersSectionContent()
     }
     
-    public static var identifier: String {
+    open var identifier: String {
         guard String(describing: type(of: self)).hasPrefix("ShapeControllersSection") else {
             return String(describing: type(of: self))
         }
@@ -50,7 +50,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     }
     
     private func commonInit() {
-        store.state.controllers.section.data[type(of: self).identifier] = correspondingStore
+        store.state.controllers.section.data[self.identifier] = correspondingStore
         store.dispatch(ControllersSectionInit())
     }
     

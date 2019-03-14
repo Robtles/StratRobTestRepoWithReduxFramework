@@ -37,11 +37,11 @@ open class ShapeControllersUtilityBase: ShapeControllersFeature {
     }
     
     @IBAction open func tappedButton(_ sender: Any) {
-        store.dispatch(ControllersUtilityInput.hide(ofType: type(of: self).featureIdentifier, showingCompletion: true))
+        store.dispatch(ControllersUtilityInput.hide(ofType: self.featureIdentifier, showingCompletion: true))
     }
     
     @IBAction func tapToDismiss(_ sender: Any) {
-        store.dispatch(ControllersUtilityInput.hide(ofType: type(of: self).featureIdentifier, showingCompletion: false))
+        store.dispatch(ControllersUtilityInput.hide(ofType: self.featureIdentifier, showingCompletion: false))
     }
     
     // MARK: Init Methods
@@ -56,7 +56,7 @@ open class ShapeControllersUtilityBase: ShapeControllersFeature {
     }
     
     private func commonInit() {
-        store.state.controllers.utility.data[type(of: self).featureIdentifier] = correspondingUtilityStore
+        store.state.controllers.utility.data[self.featureIdentifier] = correspondingUtilityStore
     }
     
     // MARK: View Methods
