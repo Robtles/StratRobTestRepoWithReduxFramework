@@ -21,7 +21,7 @@ public protocol StoreControllersSectionProtocol: StoreProtocol, OldPropsProtocol
     
     var current: Bool { get }
     
-    var identifier: String { get }
+    static var identifier: String { get }
     
     var routes: [Route] { get }
     
@@ -31,7 +31,7 @@ open class StoreControllersSectionContent: StoreControllersSectionProtocol {
     
     public var data: [String : Any?]
     
-    public var identifier: String {
+    public static var identifier: String {
         return ""
     }
     

@@ -12,6 +12,10 @@ import Foundation
 
 extension String {
     
+    public func firstLetterLowercased() -> String {
+        return String(self.prefix(1).lowercased() + self.dropFirst())
+    }
+    
     public func isNumber() -> Bool {
         return (NumberFormatter().number(from: self)?.doubleValue) != nil
     }
