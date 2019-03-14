@@ -26,7 +26,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     }
     
     open var sectionType: String {
-        return "current"
+        return String(describing: type(of: self))
     }
     
     open var shouldShowNavigationBar: Bool {
