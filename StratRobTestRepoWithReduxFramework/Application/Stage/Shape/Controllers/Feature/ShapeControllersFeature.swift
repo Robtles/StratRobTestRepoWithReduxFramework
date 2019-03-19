@@ -40,8 +40,14 @@ open class ShapeControllersFeature: UIViewController, ShapeControllersFeaturePro
         }
     }
     
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        store.subscribe(self)
+    }
+    
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        store.unsubscribe(self)
         if self.isBeingDismissed || self.isMovingFromParent {
             store.dispatch(ControllersSectionPop())
         }
