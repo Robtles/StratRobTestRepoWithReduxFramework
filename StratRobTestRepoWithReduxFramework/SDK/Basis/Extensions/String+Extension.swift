@@ -6,7 +6,7 @@
 //  Copyright © 2017 Henrik. All rights reserved.
 //
 
-import Foundation
+import Foundation; import UIKit;
 
 // MARK: String Extension
 

@@ -16,12 +16,12 @@ open class ShapeControllersFeature: UIViewController, ShapeControllersFeaturePro
         return StoreControllersFeatureContent()
     }
     
-    open var featureIdentifier: String {
-        let prefix = self is ShapeControllersUtilityBase ? "ShapeControllersUtility" : "ShapeControllersFeature"
-        guard String(describing: type(of: self)).hasPrefix(prefix) else {
-            return String(describing: type(of: self))
+    public static var featureIdentifier: String {
+        let prefix = self is ShapeControllersUtilityBase.Type ? "ShapeControllersUtility" : "ShapeControllersFeature"
+        guard "\(self)".hasPrefix(prefix) else {
+            return "\(self)"
         }
-        return String(String(describing: type(of: self)).dropFirst(prefix.count)).firstLetterLowercased()
+        return String("\(self)".dropFirst(prefix.count)).firstLetterLowercased()
     }
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -35,7 +35,7 @@ open class ShapeControllersFeature: UIViewController, ShapeControllersFeaturePro
     }
     
     private func commonInit() {
-        store.state.controllers.feature.data[self.featureIdentifier] = correspondingStore
+        store.state.controllers.feature.data[type(of: self).featureIdentifier] = correspondingStore
     }
     
     open override func viewWillDisappear(_ animated: Bool) {
@@ -56,7 +56,7 @@ protocol ShapeControllersFeatureProtocol: StoreSubscriber {
     
     var correspondingStore: StoreControllersFeatureContent { get }
     
-    var featureIdentifier: String { get }
+    static var featureIdentifier: String { get }
     
 }
 
