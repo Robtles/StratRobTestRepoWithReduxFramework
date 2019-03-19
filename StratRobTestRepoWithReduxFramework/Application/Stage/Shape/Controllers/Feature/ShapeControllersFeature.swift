@@ -35,7 +35,9 @@ open class ShapeControllersFeature: UIViewController, ShapeControllersFeaturePro
     }
     
     private func commonInit() {
-        store.state.controllers.feature.data[type(of: self).featureIdentifier] = correspondingStore
+        if store.state.controllers.feature.data[type(of: self).featureIdentifier] == nil {
+            store.state.controllers.feature.data[type(of: self).featureIdentifier] = correspondingStore
+        }
     }
     
     open override func viewWillDisappear(_ animated: Bool) {

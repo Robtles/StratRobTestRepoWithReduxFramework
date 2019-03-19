@@ -60,7 +60,9 @@ open class ShapeControllersUtilityBase: ShapeControllersFeature {
     }
     
     private func commonInit() {
-        store.state.controllers.utility.data[type(of: self).featureIdentifier] = correspondingUtilityStore
+        if store.state.controllers.utility.data[type(of: self).featureIdentifier] == nil {
+            store.state.controllers.utility.data[type(of: self).featureIdentifier] = correspondingUtilityStore
+        }
     }
     
     // MARK: View Methods

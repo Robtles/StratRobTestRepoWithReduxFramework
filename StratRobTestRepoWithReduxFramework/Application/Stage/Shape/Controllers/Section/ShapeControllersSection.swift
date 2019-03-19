@@ -50,8 +50,10 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     }
     
     private func commonInit() {
-        store.state.controllers.section.data[self.identifier] = correspondingStore
-        store.dispatch(ControllersSectionInit())
+        if store.state.controllers.section.data[self.identifier] == nil {
+            store.state.controllers.section.data[self.identifier] = correspondingStore
+            store.dispatch(ControllersSectionInit())
+        }
     }
     
     // MARK: Life Methods
