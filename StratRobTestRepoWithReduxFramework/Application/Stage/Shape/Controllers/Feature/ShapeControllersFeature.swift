@@ -24,6 +24,24 @@ open class ShapeControllersFeature: UIViewController, ShapeControllersFeaturePro
         return String("\(self)".dropFirst(prefix.count)).firstLetterLowercased()
     }
     
+    var featureLeftBarButton: UIBarButtonItem? {
+        didSet {
+            self.navigationController?.navigationItem.leftBarButtonItem = featureLeftBarButton
+        }
+    }
+    
+    var featureRightBarButton: UIBarButtonItem? {
+        didSet {
+            self.navigationController?.navigationItem.leftBarButtonItem = featureLeftBarButton
+        }
+    }
+    
+    var featureTitle: String? {
+        didSet {
+            self.title = featureTitle
+        }
+    }
+    
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         self.commonInit()
@@ -66,5 +84,13 @@ protocol ShapeControllersFeatureProtocol: StoreSubscriber {
     
     static var featureIdentifier: String { get }
     
+    var featureLeftBarButton: UIBarButtonItem? { get }
+    
+    var featureRightBarButton: UIBarButtonItem? { get }
+    
+    var featureTitle: String? { get }
+    
 }
+
+
 

@@ -92,8 +92,54 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         }
     }
     
+    private func push(_ route: Route) {
+        
+    }
+    
+    open func push(_ routes: [Route]) {
+        routes.forEach { route in
+            self.push(route)
+        }
+    }
+    
     // MARK: Store Methods
     
-    open func newState(state: Store) {}
+    open func newState(state: Store) {
+        if let routes = store.state.controllers.section.data[self.identifier]?.routes {
+            let oldRoutesCount = (store.state.controllers.section.data[self.identifier]?.oldProps["routes"] as? [Route])?.count ?? routes.count
+            if routes.count < oldRoutesCount {
+                self.pop()
+                store.state.controllers.section.data[self.identifier]?.updateOldProps()
+            } else if routes.count > oldRoutesCount {
+                self.push(Array(routes[routes.count-(routes.count - oldRoutesCount)..<routes.count]))
+                store.state.controllers.section.data[self.identifier]?.updateOldProps()
+            }
+        }
+    }
+    
+}
+
+
+public protocol RouteType {
+    
+    var params: [String: Any?] { get }
+    
+    var identifier: String { get }
+    
+}
+
+public protocol RouteProviderType {
+    
+    associatedtype Route: RouteType
+    
+    func f(r: Route)
+    
+}
+
+open class RouteProvider<Route: RouteType>: RouteProviderType {
+    
+    public func f(r: Route) {
+        print("")
+    }
     
 }
