@@ -16,9 +16,9 @@ open class ControllersSectionPush: Input {
     
     open var data: [String : Any?]
     
-    open var route: Route? {
+    open var route: BaseRoute? {
         get {
-            return self.data["route"] as? Route 
+            return self.data["route"] as? BaseRoute 
         }
         set {
             self.data["route"] = newValue
@@ -37,7 +37,7 @@ open class ControllersSectionPush: Input {
         self.data = data
     }
     
-    public init(_ route: Route) {
+    public init(_ route: BaseRoute) {
         self.data = ["route": route]
     }
     

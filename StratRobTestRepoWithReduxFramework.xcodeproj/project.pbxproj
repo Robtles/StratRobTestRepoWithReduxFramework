@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9CC120A3AF03933E6D0CAF00 /* Pods_StratRobTestRepoWithReduxFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFA2694D0D0601E7D709CE6D /* Pods_StratRobTestRepoWithReduxFramework.framework */; };
-		D48CEB7422436B960074161F /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CEB7322436B960074161F /* Route.swift */; };
+		D48CEB7422436B960074161F /* BaseRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48CEB7322436B960074161F /* BaseRoute.swift */; };
 		D4E497BE2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D4E497BC2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4E497D1223273600007C625 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497C92232735F0007C625 /* Date+Extension.swift */; };
 		D4E497D2223273600007C625 /* NSNumber+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E497CA223273600007C625 /* NSNumber+Extension.swift */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		53224A2DC4E0D0DD6296BEAE /* Pods-StratRobTestRepoWithReduxFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StratRobTestRepoWithReduxFramework.release.xcconfig"; path = "Target Support Files/Pods-StratRobTestRepoWithReduxFramework/Pods-StratRobTestRepoWithReduxFramework.release.xcconfig"; sourceTree = "<group>"; };
 		6198D87DE8C46912117D8EBA /* Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig"; path = "Target Support Files/Pods-StratRobTestRepoWithReduxFramework/Pods-StratRobTestRepoWithReduxFramework.debug.xcconfig"; sourceTree = "<group>"; };
-		D48CEB7322436B960074161F /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		D48CEB7322436B960074161F /* BaseRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRoute.swift; sourceTree = "<group>"; };
 		D4E497B92232714F0007C625 /* StratRobTestRepoWithReduxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StratRobTestRepoWithReduxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E497BC2232714F0007C625 /* StratRobTestRepoWithReduxFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StratRobTestRepoWithReduxFramework.h; sourceTree = "<group>"; };
 		D4E497BD2232714F0007C625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 		D4E497E0223276340007C625 /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				D48CEB7322436B960074161F /* Route.swift */,
+				D48CEB7322436B960074161F /* BaseRoute.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -527,7 +527,7 @@
 				D4E497F8223277240007C625 /* ControllersSectionPop.swift in Sources */,
 				D4E497D3223273600007C625 /* UIRefreshControl+Extension.swift in Sources */,
 				D4EF24C02237B75B0039005C /* StoreControllers.swift in Sources */,
-				D48CEB7422436B960074161F /* Route.swift in Sources */,
+				D48CEB7422436B960074161F /* BaseRoute.swift in Sources */,
 				D4E497FC223277370007C625 /* EventOrder.swift in Sources */,
 				D4E497D4223273600007C625 /* CLPlacemark+Extension.swift in Sources */,
 				D4E497FE223277420007C625 /* EventQuery.swift in Sources */,

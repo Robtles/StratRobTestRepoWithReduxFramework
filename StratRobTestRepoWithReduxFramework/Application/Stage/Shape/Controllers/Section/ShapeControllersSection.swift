@@ -25,7 +25,9 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         return String(String(describing: type(of: self)).dropFirst("ShapeControllersSection".count)).firstLetterLowercased()
     }
     
-    open var initialRoute: Route?
+    open var initialRoute: RouteProtocol? {
+        return nil
+    }
     
     open var sectionType: String {
         return String(describing: type(of: self))
@@ -98,11 +100,11 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         }
     }
 
-    fileprivate func push(route: Route) {
+    fileprivate func push(route: BaseRoute) {
         self.push(route.feature)
     }
     
-    fileprivate func push(routes: [Route]) {
+    fileprivate func push(routes: [BaseRoute]) {
         routes.forEach { route in
             self.push(route: route)
         }
@@ -118,7 +120,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     
     open func newState(state: Store) {
         if let routes = store.state.controllers.section.data[self.identifier]?.routes {
-            let oldRoutesCount = (store.state.controllers.section.data[self.identifier]?.oldProps["routes"] as? [Route])?.count ?? routes.count
+            let oldRoutesCount = (store.state.controllers.section.data[self.identifier]?.oldProps["routes"] as? [BaseRoute])?.count ?? routes.count
             if routes.count < oldRoutesCount {
                 self.pop()
                 store.state.controllers.section.data[self.identifier]?.updateOldProps()
@@ -137,7 +139,7 @@ public protocol ShapeControllersSectionProtocol {
 
     var identifier: String { get }
     
-    var initialRoute: Route? { get }
+    var initialRoute: RouteProtocol? { get }
 
     var sectionType: String { get }
 
@@ -148,11 +150,11 @@ public protocol ShapeControllersSectionProtocol {
 
 extension ShapeControllersSection {
     
-    func push<T: Route>(_ route: T) {
+    func push<T: BaseRoute>(_ route: T) {
         self.push(route: route)
     }
     
-    func push<T: Route>(_ routes: [T]) {
+    func push<T: BaseRoute>(_ routes: [T]) {
         self.push(routes: routes)
     }
     

@@ -18,8 +18,8 @@ open class ControllersSectionInit: Input {
     
     open var meta: ControllersSectionInit.Meta = ControllersSectionInit.Meta(.input)
     
-    open var routes: [Route] {
-        return data["routes"] as? [Route] ?? []
+    open var routes: [BaseRoute] {
+        return data["routes"] as? [BaseRoute] ?? []
     }
     
     // MARK: - Init Methods
@@ -32,7 +32,7 @@ open class ControllersSectionInit: Input {
         self.data = data
     }
     
-    public init(withRoute route: Route) {
+    public init(withRoute route: BaseRoute) {
         self.data = ["routes": [route]]
     }
     

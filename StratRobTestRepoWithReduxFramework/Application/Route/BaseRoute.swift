@@ -45,7 +45,7 @@ import Foundation
  *
  ****************************************************************/
 
-public typealias Route = RouteProtocol
+public typealias BaseRoute = RouteProtocol
 
 public protocol RouteProtocol {
     

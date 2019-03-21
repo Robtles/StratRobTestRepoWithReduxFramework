@@ -23,7 +23,7 @@ public protocol StoreControllersSectionProtocol: StoreProtocol, OldPropsProtocol
     
     var identifier: String { get }
     
-    var routes: [Route] { get }
+    var routes: [BaseRoute] { get }
     
 }
 
@@ -55,9 +55,9 @@ extension StoreControllersSectionProtocol {
         }
     }
     
-    public var routes: [Route] {
+    public var routes: [BaseRoute] {
         get {
-            return data["routes"] as? [Route] ?? []
+            return data["routes"] as? [BaseRoute] ?? []
         }
         set {
             data["routes"] = newValue
