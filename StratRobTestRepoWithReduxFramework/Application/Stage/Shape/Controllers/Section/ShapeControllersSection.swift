@@ -71,7 +71,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     
     // MARK: Section Methods
     
-    @objc open func pop() {
+    @objc private func pop() {
         if Thread.isMainThread {
             self.popViewController(animated: true)
             
@@ -82,7 +82,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         }
     }
     
-    open func push(_ feature: ShapeControllersFeature) {
+    private func push(_ feature: ShapeControllersFeature) {
         if Thread.isMainThread {
             self.pushViewController(feature, animated: true)
         } else {
@@ -93,7 +93,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     }
 
     open func push(route: Route) {
-        self.push(route.feature, withParams: route.params)
+        self.push(route.feature)
     }
     
     open func push(routes: [Route]) {
@@ -102,9 +102,7 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         }
     }
     
-    #warning("what to do with params?")
-    /// This function handles the push
-    private func push(_ feature: ShapeControllersFeature?, withParams params: [String: Any?] = [:]) {
+    private func push(_ feature: ShapeControllersFeature?) {
         if let feature = feature {
             self.push(feature)
         }
