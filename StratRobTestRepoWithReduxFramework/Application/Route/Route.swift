@@ -2,23 +2,37 @@
 //  Route.swift
 //  StratRobTestRepoWithReduxFramework
 //
-//  Created by Rob on 08/03/2019.
+//  Created by Rob on 21/03/2019.
 //  Copyright © 2019 com.rob. All rights reserved.
 //
 
 import Foundation
 
 
+public typealias Route = RouteProtocol
 
-open class Route {
+public protocol RouteProtocol {
     
-    open var actionId: String
+    var feature: ShapeControllersFeature? { get }
     
-    open var data: [String]
+    var params: [String: Any?] { get }
     
-    public init(action: String = "", data: [String] = []) {
-        self.actionId = action
-        self.data = data
+}
+
+
+public protocol RouteProviderProtocol: AnyObject {
+
+    func feature(for route: RouteProtocol) -> ShapeControllersFeature?
+
+}
+
+
+open class RouteProvider<Route: RouteProtocol>: RouteProviderProtocol {
+
+    public init() {}
+    
+    public func feature(for route: RouteProtocol) -> ShapeControllersFeature? {
+        return route.feature
     }
     
 }

@@ -91,17 +91,25 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
             }
         }
     }
-    
-    private func push(_ route: Route) {
-        
+
+    open func push(route: Route) {
+        self.push(route.feature, withParams: route.params)
     }
     
-    open func push(_ routes: [Route]) {
+    open func push(routes: [Route]) {
         routes.forEach { route in
-            self.push(route)
+            self.push(route: route)
         }
     }
     
+    #warning("what to do with params?")
+    /// This function handles the push
+    private func push(_ feature: ShapeControllersFeature?, withParams params: [String: Any?] = [:]) {
+        if let feature = feature {
+            self.push(feature)
+        }
+    }
+
     // MARK: Store Methods
     
     open func newState(state: Store) {
@@ -111,35 +119,10 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
                 self.pop()
                 store.state.controllers.section.data[self.identifier]?.updateOldProps()
             } else if routes.count > oldRoutesCount {
-                self.push(Array(routes[routes.count-(routes.count - oldRoutesCount)..<routes.count]))
+                self.push(routes: Array(routes[routes.count-(routes.count - oldRoutesCount)..<routes.count]))
                 store.state.controllers.section.data[self.identifier]?.updateOldProps()
             }
         }
-    }
-    
-}
-
-
-public protocol RouteType {
-    
-    var params: [String: Any?] { get }
-    
-    var identifier: String { get }
-    
-}
-
-public protocol RouteProviderType {
-    
-    associatedtype Route: RouteType
-    
-    func f(r: Route)
-    
-}
-
-open class RouteProvider<Route: RouteType>: RouteProviderType {
-    
-    public func f(r: Route) {
-        print("")
     }
     
 }
