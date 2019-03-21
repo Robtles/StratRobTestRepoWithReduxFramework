@@ -10,7 +10,7 @@ import ReSwift; import UIKit;
 
 
 
-open class ShapeControllersSection: UINavigationController, UINavigationControllerDelegate, StoreSubscriber {
+open class ShapeControllersSection: UINavigationController, UINavigationControllerDelegate, ShapeControllersSectionProtocol, StoreSubscriber {
     
     // MARK: - Instance Properties
     
@@ -24,6 +24,8 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         }
         return String(String(describing: type(of: self)).dropFirst("ShapeControllersSection".count)).firstLetterLowercased()
     }
+    
+    open var initialRoute: Route?
     
     open var sectionType: String {
         return String(describing: type(of: self))
@@ -52,7 +54,11 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
     private func commonInit() {
         if store.state.controllers.section.data[self.identifier] == nil {
             store.state.controllers.section.data[self.identifier] = correspondingStore
-            store.dispatch(ControllersSectionInit())
+            if let initialRoute = self.initialRoute {
+                store.dispatch(ControllersSectionInit(withRoute: initialRoute))
+            } else {
+                store.dispatch(ControllersSectionInit())
+            }
         }
     }
     
@@ -122,5 +128,19 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
             }
         }
     }
+    
+}
+
+public protocol ShapeControllersSectionProtocol {
+
+    var correspondingStore: StoreControllersSectionContent { get }
+
+    var identifier: String { get }
+    
+    var initialRoute: Route? { get }
+
+    var sectionType: String { get }
+
+    var shouldShowNavigationBar: Bool { get }
     
 }
