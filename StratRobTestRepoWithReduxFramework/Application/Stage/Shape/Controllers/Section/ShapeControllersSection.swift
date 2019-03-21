@@ -98,11 +98,11 @@ open class ShapeControllersSection: UINavigationController, UINavigationControll
         }
     }
 
-    open func push(route: Route) {
+    fileprivate func push(route: Route) {
         self.push(route.feature)
     }
     
-    open func push(routes: [Route]) {
+    fileprivate func push(routes: [Route]) {
         routes.forEach { route in
             self.push(route: route)
         }
@@ -142,5 +142,18 @@ public protocol ShapeControllersSectionProtocol {
     var sectionType: String { get }
 
     var shouldShowNavigationBar: Bool { get }
+    
+}
+
+
+extension ShapeControllersSection {
+    
+    func push<T: Route>(_ route: T) {
+        self.push(route: route)
+    }
+    
+    func push<T: Route>(_ routes: [T]) {
+        self.push(routes: routes)
+    }
     
 }
